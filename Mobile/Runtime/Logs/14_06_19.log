@@ -1,0 +1,94 @@
+[ 2014-06-19T14:55:33+08:00 ] 127.0.0.1 /mobile.php?m=Index&a=getLinkList&more=gt&loadid=0
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001463s ]
+SQL: SHOW COLUMNS FROM `link_feed` [ RunTime:0.004359s ]
+SQL: SELECT * FROM `link_feed` WHERE ( `id` > '0' )  [ RunTime:0.000620s ]
+NOTIC: [8] Undefined variable: re D:\Wamp\www\linkmanage\Mobile\Lib\Action\IndexAction.class.php 第 15 行.
+
+[ 2014-06-19T14:55:34+08:00 ] 127.0.0.1 /mobile.php?m=Index&a=getLinkList&more=gt&loadid=0
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001220s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001423s ]
+SQL: SHOW COLUMNS FROM `link_feed` [ RunTime:0.003972s ]
+SQL: SELECT * FROM `link_feed` WHERE ( `id` > '0' )  [ RunTime:0.000671s ]
+NOTIC: [8] Undefined variable: re D:\Wamp\www\linkmanage\Mobile\Lib\Action\IndexAction.class.php 第 15 行.
+
+[ 2014-06-19T14:55:45+08:00 ] 127.0.0.1 /mobile.php?m=Index&a=getLinkList&more=gt&loadid=0
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001217s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001420s ]
+SQL: SHOW COLUMNS FROM `link_feed` [ RunTime:0.004119s ]
+SQL: SELECT * FROM `link_feed` WHERE ( `id` > '0' )  [ RunTime:0.000669s ]
+
+[ 2014-06-19T15:01:18+08:00 ] 127.0.0.1 /mobile.php?m=AddLink&a=addLink&title=%E5%8D%83%E4%B8%87%E5%88%AB%E9%94%99%E8%BF%87&url=http://www.qwbcg.com
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002987s ]
+NOTIC: [8] Undefined index: ctime D:\Wamp\www\linkmanage\Mobile\Lib\Action\AddLinkAction.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `link_feed` [ RunTime:0.004283s ]
+SQL: INSERT INTO `link_feed` (`title`,`url`,`ctime`) VALUES ('千万别错过','http://www.qwbcg.com',null) [ RunTime:0.042279s ]
+ERR: 1048:Column 'ctime' cannot be null
+ [ SQL语句 ] : INSERT INTO `link_feed` (`title`,`url`,`ctime`) VALUES ('千万别错过','http://www.qwbcg.com',null)
+
+[ 2014-06-19T15:02:07+08:00 ] 127.0.0.1 /mobile.php?m=AddLink&a=addLink&title=%E5%8D%83%E4%B8%87%E5%88%AB%E9%94%99%E8%BF%87&url=http://www.qwbcg.com
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002004s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002258s ]
+NOTIC: [8] Undefined index: ctime D:\Wamp\www\linkmanage\Mobile\Lib\Action\AddLinkAction.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `link_feed` [ RunTime:0.004456s ]
+SQL: INSERT INTO `link_feed` (`title`,`url`,`ctime`) VALUES ('千万别错过','http://www.qwbcg.com',null) [ RunTime:0.000573s ]
+ERR: 1048:Column 'ctime' cannot be null
+ [ SQL语句 ] : INSERT INTO `link_feed` (`title`,`url`,`ctime`) VALUES ('千万别错过','http://www.qwbcg.com',null)
+
+[ 2014-06-19T15:02:26+08:00 ] 127.0.0.1 /mobile.php?m=AddLink&a=addLink&title=%E5%8D%83%E4%B8%87%E5%88%AB%E9%94%99%E8%BF%87&url=http://www.qwbcg.com
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002170s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002438s ]
+SQL: SHOW COLUMNS FROM `link_feed` [ RunTime:0.004050s ]
+SQL: INSERT INTO `link_feed` (`title`,`url`,`ctime`) VALUES ('千万别错过','http://www.qwbcg.com',1403161346) [ RunTime:0.100193s ]
+
+[ 2014-06-19T15:02:39+08:00 ] 127.0.0.1 /mobile.php?m=AddLink&a=addLink&title=%E5%8D%83%E4%B8%87%E5%88%AB%E9%94%99%E8%BF%87&url=http://www.qwbcg.com
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002147s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002393s ]
+SQL: SHOW COLUMNS FROM `link_feed` [ RunTime:0.003616s ]
+SQL: INSERT INTO `link_feed` (`title`,`url`,`ctime`) VALUES ('千万别错过','http://www.qwbcg.com',1403161359) [ RunTime:0.092303s ]
+
+[ 2014-06-19T15:02:48+08:00 ] 127.0.0.1 /mobile.php?m=Index&a=getLinkList&more=gt&loadid=0
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002210s ]
+SQL: SHOW COLUMNS FROM `link_feed` [ RunTime:0.003917s ]
+SQL: SELECT * FROM `link_feed` WHERE ( `id` > '0' )  [ RunTime:0.000751s ]
+
+[ 2014-06-19T22:52:52+08:00 ] 127.0.0.1 /mobile.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002631s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002989s ]
+SQL: SHOW COLUMNS FROM `link_feed` [ RunTime:0.111215s ]
+
+[ 2014-06-19T22:54:08+08:00 ] 127.0.0.1 /mobile.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001212s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001430s ]
+SQL: SHOW COLUMNS FROM `link_feed` [ RunTime:0.004886s ]
+SQL: SHOW COLUMNS FROM `link_feed` [ RunTime:0.004390s ]
+SQL: SELECT * FROM `link_feed`  [ RunTime:0.000555s ]
+
+[ 2014-06-19T22:57:39+08:00 ] 127.0.0.1 /mobile.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001579s ]
+SQL: SHOW COLUMNS FROM `link_feed` [ RunTime:0.003983s ]
+SQL: SHOW COLUMNS FROM `link_feed` [ RunTime:0.004272s ]
+SQL: SELECT * FROM `link_feed`  [ RunTime:0.000535s ]
+
+[ 2014-06-19T22:59:35+08:00 ] 127.0.0.1 /mobile.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001061s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001287s ]
+SQL: SHOW COLUMNS FROM `link_feed` [ RunTime:0.004267s ]
+SQL: SHOW COLUMNS FROM `link_feed` [ RunTime:0.004320s ]
+SQL: SELECT * FROM `link_feed`  [ RunTime:0.000688s ]
+
