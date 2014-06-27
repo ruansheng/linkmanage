@@ -20,10 +20,10 @@ class PlugInAction extends Action {
 	* /mobile.php?m=PlugIn&a=addLink&title=千万别错过&url=http://www.qwbcg.com&cid=1
 	*/
     public function addLink(){
-    	if(!empty($_GET['title'])&&!empty($_GET['url'])&&!empty($_GET['cid'])){
-			$data['title']=$_GET['title'];
-			$data['url']=$_GET['url'];
-			$data['cid']=$_GET['cid'];
+    	if(!empty($_POST['title'])&&!empty($_POST['url'])&&!empty($_POST['cid'])){
+			$data['title']=$_POST['title'];
+			$data['url']=$_POST['url'];
+			$data['cid']=$_POST['cid'];
 			$data['ctime']=time();
 			$row=D('feed')->add($data);
 	
