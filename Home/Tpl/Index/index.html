@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+      <title>xnye分享平台</title>
+	  <meta charset="utf-8"/>
+	  <style type="text/css">
+	     ul{list-style-type:none;}
+		 .list{width:500px;height:auto;margin:0 auto;}
+		 .item{width:500px;height:35px;line-height:35px;}
+		 .page{width:500px;height:35px;line-height:35px;text-align:center;}
+	  </style>
+  </head>
+	<body>
+	<ul class="list">
+		<volist name="list" id="vi">
+			<li class="item"><a href="{$vi.url}" target="_blank">{$vi.title}</a><span>{$vi.category}</span></li>
+		</volist>
+		<li class="page">{$page}</li>
+	</ul>
+	</body>
+</html>

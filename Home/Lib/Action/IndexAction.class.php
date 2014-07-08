@@ -2,6 +2,17 @@
 // 本类由系统自动生成，仅供测试用途
 class IndexAction extends Action {
     public function index(){
-	$this->show('<style type="text/css">*{ padding: 0; margin: 0; } div{ padding: 4px 48px;} body{ background: #fff; font-family: "微软雅黑"; color: #333;} h1{ font-size: 100px; font-weight: normal; margin-bottom: 12px; } p{ line-height: 1.8em; font-size: 36px }</style><div style="padding: 24px 48px;"> <h1>:)</h1><p>欢迎使用 <b>ThinkPHP</b>！</p></div><script type="text/javascript" src="http://tajs.qq.com/stats?sId=9347272" charset="UTF-8"></script>','utf-8');
+		$feed = M('feed'); // 实例化User对象
+		import('ORG.Util.Page');// 导入分页类
+		$table="link_feed feed,link_category category";
+		$count      = $feed->table($table)->count();// 查询满足要求的总记录数
+		$Page       = new Page($count,25);// 实例化分页类 传入总记录数和每页显示的记录数
+		$show       = $Page->show();// 分页显示输出
+		 // 进行分页数据查询 注意limit方法的参数要使用Page类的属性
+		 $field="feed.id,feed.title,feed.url,category.cid,category.category,feed.ctime";
+		$list = $feed->table($table)->field($field)->order('feed.ctime desc')->limit($Page->firstRow.','.$Page->listRows)->select();
+		$this->assign('list',$list);// 赋值数据集
+		$this->assign('page',$show);// 赋值分页输出
+		$this->display(); // 输出模板
     }
 }
