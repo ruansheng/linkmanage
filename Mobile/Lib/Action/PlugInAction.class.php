@@ -31,7 +31,7 @@ class PlugInAction extends Action {
 				$result['status']=0;
 				$result['message']="解析成功";
 			}else{
-				$result['status']=-2;
+				$result['status']=-1;
 				$result['message']="解析失败";
 			}
     	}else{
