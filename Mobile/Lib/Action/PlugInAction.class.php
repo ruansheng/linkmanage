@@ -20,6 +20,9 @@ class PlugInAction extends Action {
 	* /mobile.php?m=PlugIn&a=addLink&title=千万别错过&url=http://www.qwbcg.com&cid=1
 	*/
     public function addLink(){
+		file_put_contents("1.txt",$_POST['title']);
+		file_put_contents("1.txt",$_POST['url']);
+		file_put_contents("1.txt",$_POST['cid']);
     	if(!empty($_POST['title'])&&!empty($_POST['url'])&&!empty($_POST['cid'])){
 			$data['title']=$_POST['title'];
 			$data['url']=$_POST['url'];
