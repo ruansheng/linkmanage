@@ -21,8 +21,8 @@ class PlugInAction extends Action {
 	*/
     public function addLink(){
 		file_put_contents("1.txt",$_POST['title']);
-		file_put_contents("1.txt",$_POST['url']);
-		file_put_contents("1.txt",$_POST['cid']);
+		file_put_contents("2.txt",$_POST['url']);
+		file_put_contents("3.txt",$_POST['cid']);
     	if(!empty($_POST['title'])&&!empty($_POST['url'])&&!empty($_POST['cid'])){
 			$data['title']=$_POST['title'];
 			$data['url']=$_POST['url'];
