@@ -19,7 +19,7 @@
 	<body>
 	<h1>xnye分享管理平台</h1>
 	<ul class="list">
-			<li class="title"><span class="one">标题</span class="two"><span>类别</span><span class="three">时间</span></li>
+			<li class="title"><span class="one">标题</span><span class="two">类别</span><span class="three">时间</span></li>
 		<volist name="list" id="vi">
 			<li class="item"><a class="one" href="{$vi.url}" target="_blank">{$vi.title}</a><span class="two">{$vi.category}</span><span class="three"><?php echo date('Y-m-d H:i:s',$vi['ctime']);?></span></li>
 		</volist>
