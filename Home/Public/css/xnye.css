@@ -1,0 +1,16 @@
+body{ background:#f1f1e7; height:auto; font-family:微软雅黑;}
+#header{ height:90px; height:90px; background:#009d01;border-bottom:1px solid #bebeb6;}
+.center_part{ width:802px; height:90px; background:#fff; border-bottom:1px solid #009d01; margin:0 auto;}
+.center_part h2{height:90px; line-height:90px;font-size:20px; font-weight:normal;color:#7c7a71; background:url(../images/logo.png) no-repeat 215px 15px; text-align:center; padding-left:170px; }
+#content{ width:802px;margin:0 auto; background:#fff;}
+.main{width:680px;margin:0 auto; padding:10px 0;}
+.txt{ height:44px; background:red; padding:20px 0; line-height:25px; background:url(../images/line.png) repeat-x left bottom;}
+.txt a{ font-size:16px; color:#333333; padding-right:5px;}
+.txt a:hover{ color:#26a527;}
+.txt span{ font-size:12px; color:#b9bec4 ; padding-right:10px;   }
+.dot{ background:url(../images/dot.png) no-repeat left center; padding-left:12px}
+.txt span.special{ font-size:14px;}
+.txt span.special a{color:#b9bec4; }
+.txt span.special a:hover{color:#26a527;}
+.next{ display:inline-block; margin:0 auto; width:802px;  background:#fff; text-align:center; font-size:18px; padding-top:33px; padding-bottom:136px; color:#26a527;}
+.next:hover{ text-decoration:underline;}

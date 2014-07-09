@@ -1,29 +1,37 @@
 <!doctype html>
 <html>
-  <head>
-      <title>xnye分享平台</title>
-	  <meta charset="utf-8"/>
-	  <style type="text/css">
-	     ul{list-style-type:none;}
-		 h1{text-align:center;}
-		 a{text-decoration:none;}
-		 .list{width:900px;height:auto;margin:0 auto;}
-		 .title{width:900px;height:35px;line-height:35px;font-weight:bold;background:grey;}
-		 .item{width:900px;height:35px;line-height:35px;border-bottom:1px solid grey;}
-			 .one{display:inline-block;width:600px;height:35px;text-align:center;float:left;}
-			 .two{display:inline-block;width:100px;height:35px;text-align:center;float:left;}
-			 .three{display:inline-block;width:200px;height:35px;text-align:center;float:left;}
-		 .page{width:900px;height:35px;line-height:35px;text-align:center;}
-	  </style>
-  </head>
-	<body>
-	<h1>xnye分享管理平台</h1>
-	<ul class="list">
-			<li class="title"><span class="one">标题</span><span class="two">类别</span><span class="three">时间</span></li>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<title>xnye</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/Home/Public/css/d-reset.css" type="text/css" />
+<link rel="stylesheet" href="/Home/Public/css/xnye.css" type="text/css"/ >
+</head>
+<body>
+	<div id="header">
+		<div class="center_part">
+			<h2>新叶网络知识分享平台</h2>
+		</div>
+	</div>
+	<div id="content">
+		<div class="main">
 		<volist name="list" id="vi">
-			<li class="item"><a class="one" href="{$vi.url}" target="_blank">{$vi.title}</a><span class="two">{$vi.category}</span><span class="three"><?php echo date('Y-m-d H:i:s',$vi['ctime']);?></span></li>
+			<div class="txt">
+				<p><a href="{$vi.url}" target="_blank">详解linux命令：改变文件或目录的访问权限</a><span class="special"><a href="{$vi.url}" target="_blank">({$vi.domain})</a></span>
+				<p><span><?php echo date('Y-m-d H:i:s',$vi['ctime']);?></span><span class="dot">{$vi.category}</span><span class="dot">XXX</span></p>
+				</p>
+			</div>
 		</volist>
-		<li class="page">{$page}</li>
-	</ul>
-	</body>
+		
+		
+		
+		</div>
+		<a class="next" href="">Next</a>
+	</div>
+
+
+
+
+
+</body>
 </html>
