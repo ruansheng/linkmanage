@@ -16,7 +16,8 @@ class IndexAction extends Action {
 		
 		$list = $feed->table($table)->field($field)->where($map)->order('feed.ctime desc')->limit($Page->firstRow.','.$Page->listRows)->select();
 		foreach($list as $key=>$val){
-			$list[$key]['domain']=parse_url($val['url'])['host'];
+			$dm=parse_url($val['url']);
+			$list[$key]['domain']=$dm['host'];
 		}
 		/*
 		echo "<pre>";
